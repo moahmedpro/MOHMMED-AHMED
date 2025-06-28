@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>🌟 محمد أحمد الدسوقي - VIP 🌟</title>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Tajawal', sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+    }
+
+    .login {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(to right, #141E30, #243B55);
+    }
+
+    .login-box {
+      background: linear-gradient(135deg, rgba(0,0,0,0.85), rgba(255,215,0,0.15));
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 25px gold;
+      text-align: center;
+    }
+
+    input, button {
+      padding: 12px;
+      margin: 10px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: none;
+      text-align: center;
+    }
+
+    button {
+      background: linear-gradient(45deg, gold, orange);
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 10px gold;
+    }
+
+    .games-section {
+      display: none;
+      padding: 40px 20px;
+      background: #0d0d0d;
+    }
+
+    .vip-banner {
+      display: none;
+      background: linear-gradient(45deg, #FFD700, #FF6347);
+      color: black;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 30px gold;
+      text-align: center;
+      margin-bottom: 40px;
+      animation: pulse 3s infinite;
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 10px gold; }
+      50% { box-shadow: 0 0 30px orange; }
+      100% { box-shadow: 0 0 10px gold; }
+    }
+
+    .game {
+      background: #1a1a1a;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 15px;
+      max-width: 600px;
+      box-shadow: 0 0 15px #ffd70055;
+      text-align: center;
+    }
+
+    .game img {
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    .game h3 {
+      color: gold;
+    }
+
+    .footer {
+      background: #1a1a1a;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      border-top: 2px solid gold;
+    }
+
+    .footer span {
+      color: gold;
+      font-weight: bold;
+    }
+
+    #password-container {
+      display: none;
+    }
+
+    .tech-info {
+      margin: 20px 0;
+      text-align: center;
+      font-size: 18px;
+      color: gold;
+    }
+  </style>
+</head>
+<body>
+
+<div class="login" id="login">
+  <div class="login-box">
+    <h2>🎮 مرحبًا بك في موقع <span style="color: gold;">محمد أحمد الدسوقي</span></h2>
+    <p>👨‍💻 المدير الفني: <strong style="color: orange;">محمد أحمد الدسوقي</strong></p>
+    <input type="text" id="username" placeholder="اكتب اسمك">
+    <div id="password-container">
+      <input type="password" id="password" placeholder="كلمة السر">
+    </div>
+    <button onclick="login()">دخول</button>
+  </div>
+</div>
+
+<div class="games-section" id="games">
+  <div class="vip-banner" id="vip-banner">
+    <h2>👑 نورت الدنيا يا بابا أحمد 👑</h2>
+    <p>هذه النسخة الملكية من تصميم المدير الفني <strong>محمد أحمد الدسوقي</strong></p>
+    <img src="https://placehold.co/600x200/FFD700/000?text=VIP+ACCESS" alt="VIP Access" style="border-radius: 10px; margin-top: 15px;">
+  </div>
+
+  <h2 style="text-align:center; color: gold;">🔥 أقوى الألعاب الحصرية</h2>
+
+  <div class="game">
+    <img src="https://placehold.co/600x300/000/gold?text=God+of+War" alt="God of War">
+    <h3>God of War: Ragnarök</h3>
+    <p>قاتل الآلهة مع كريتوس وابنه في ملحمة أسطورية!</p>
+  </div>
+
+  <div class="game">
+    <img src="https://placehold.co/600x300/000/gold?text=Spider-Man+2" alt="Spider-Man 2">
+    <h3>Spider-Man 2</h3>
+    <p>واجه الأشرار في مغامرة سريعة بين ناطحات السحاب.</p>
+  </div>
+
+  <div class="tech-info">
+    👨‍💻 المدير الفني لهذا الموقع: <span>محمد أحمد الدسوقي</span>
+  </div>
+
+  <p style="text-align:center;">📩 للتواصل على الواتساب:
+    <a href="https://wa.me/201234567890" style="color:gold;" target="_blank">اضغط هنا</a>
+  </p>
+</div>
+
+<div class="footer">
+  &copy; 2025 - جميع الحقوق محفوظة - تصميم <span>محمد أحمد الدسوقي</span>
+</div>
+
+<script>
+function login() {
+  const username = document.getElementById("username").value.trim().toLowerCase();
+  const passContainer = document.getElementById("password-container");
+  const password = document.getElementById("password").value;
+
+  if (username === "أحمد" || username === "ahmed") {
+    alert("🧔 اكتب البسورد يا بابا 💛");
+    passContainer.style.display = "block";
+    if (password === "ahmed123") {
+      document.getElementById("login").style.display = "none";
+      document.getElementById("games").style.display = "block";
+      document.getElementById("vip-banner").style.display = "block";
+      document.body.style.background = "linear-gradient(to right, black, gold, black)";
+    } else if (password !== "") {
+      alert("❌ كلمة السر غير صحيحة. حاول تاني!");
+    }
+  } else if (username !== "") {
+    alert(`🎮 أهلًا ${username}! استمتع بالألعاب`);
+    document.getElementById("login").style.display = "none";
+    document.getElementById("games").style.display = "block";
+  } else {
+    alert("اكتب اسمك الأول يا نجم!");
+  }
+}
+</script>
+
+</body>
+</html>
